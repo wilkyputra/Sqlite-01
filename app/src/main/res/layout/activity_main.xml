@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical"
+    android:background="@drawable/rounded2"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TableRow>
+            <TextView
+                android:text="Nama user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+
+            <EditText
+                android:id="@+id/u_name"
+                android:width="200dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginStart="20sp"
+                android:layout_marginLeft="20sp"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+
+            <EditText
+                android:id="@+id/u_email"
+                android:width="200dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginStart="20sp"
+                android:layout_marginLeft="20sp" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:text="Address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+
+            <EditText
+                android:id="@+id/u_address"
+                android:width="200dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginStart="20sp"
+                android:layout_marginLeft="20sp" />
+        </TableRow>
+
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="25sp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:background="@drawable/rounded"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:text="Save"
+            android:onClick="saveRecord"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/rounded">
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</LinearLayout>
